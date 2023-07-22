@@ -24,11 +24,11 @@ const HomeScreenStack = ({ navigation, route }) => {
             <Stack.Screen name='HomeScreen' component={HomeScreen} options={{
                 headerRight: () => (
                     <Button title='기프티콘등록' onPress={() => {
-                        navigation.navigate('RegisterGifticon')
+                        // navigation.navigate('RegisterGifticon')
                     }} />
                 )
             }}/>
-            <Stack.Screen name='UploadGifticon' component={UploadGifticon}/>
+            {/* <Stack.Screen name='UploadGifticon' component={UploadGifticon}/> */}
         </Stack.Navigator>
     )
 }
