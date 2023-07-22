@@ -4,7 +4,7 @@ import { Button } from "react-native"
 import HomeScreen from "../HomeScreen"
 import { getFocusedRouteNameFromRoute } from "@react-navigation/native"
 import { createStackNavigator } from "@react-navigation/stack"
-import UploadGifticon from "../../UploadGifticon"
+// import RegisterGifticon from "../../RegisterGifticon"
 import LoginScreen from "../AuthStackScreens/LoginScreen"
 
 const Stack = createStackNavigator()
@@ -24,11 +24,11 @@ const HomeScreenStack = ({ navigation, route }) => {
             <Stack.Screen name='HomeScreen' component={HomeScreen} options={{
                 headerRight: () => (
                     <Button title='기프티콘등록' onPress={() => {
-                        navigation.navigate('UploadGifticon')
+                        navigation.navigate('RegisterGifticon')
                     }} />
                 )
-            }}></Stack.Screen>
-            <Stack.Screen name='RegisterGifticon' component={RegisterGifticon}></Stack.Screen>
+            }}/>
+            <Stack.Screen name='UploadGifticon' component={UploadGifticon}/>
         </Stack.Navigator>
     )
 }
